@@ -566,7 +566,7 @@ function App() {
         </section>
 
         <section className="team-section" id="team">
-          <div className="team-card"><div><div className="section-kicker light"><span>06</span> TEAM ECLIPSE</div><h2>Making identity screening<br /><em>clearer for everyone.</em></h2><p>Built for SIH26188 with a focus on simple language, useful signals, and responsible human oversight.</p></div><div className="team-meta"><div><span>TEAM</span><strong>ECLIPSE</strong></div><div><span>CHALLENGE</span><strong>SIH26188</strong></div><div><span>STATUS</span><strong><i /> DEMO READY</strong></div></div></div>
+          <div className="team-card"><div><div className="section-kicker light"><span className="eyebrow-line" /><span>06</span> TEAM ECLIPSE</div><h2>Making identity screening<br /><em>clearer for everyone.</em></h2><p>Built for SIH26188 with a focus on simple language, useful signals, and responsible human oversight.</p></div><div className="team-meta"><div><span>TEAM</span><strong>ECLIPSE</strong></div><div><span>CHALLENGE</span><strong>SIH26188</strong></div><div><span>STATUS</span><strong><i /> DEMO READY</strong></div></div></div>
         </section>
       </main>
       <footer><a className="brand" href="#top"><span className="brand-mark"><ScanLine size={17} /></span><span><strong>TEAM ECLIPSE</strong><small>AI-BASED IDENTITY SCREENING</small></span></a><span className="footer-note">ML PROTOTYPE — DEMONSTRATION ONLY · Built for SIH26188</span><a className="back-top" href="#top">Back to top <ChevronRight size={14} /></a></footer>
