@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "TEAM ECLIPSE — Identity Screening"
+description = "A single-page demonstration prototype for AI-based fake identity and document screening, with local image analysis, explainable risk signals, and an officer-support recommendation flow."
+version = "1.0.0"
+id = "artifacts/team-eclipse-screening"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18589
+
+[services.development]
+run = "pnpm --filter @workspace/team-eclipse-screening run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/team-eclipse-screening", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/team-eclipse-screening/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18589"
+BASE_PATH = "/"

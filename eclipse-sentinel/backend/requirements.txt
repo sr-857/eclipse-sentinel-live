@@ -1,0 +1,24 @@
+# Eclipse Sentinel - ML Prototype Backend
+# Core API
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+
+# Image Processing
+opencv-python-headless==4.10.0.84
+Pillow==11.1.0
+numpy==2.2.2
+
+# OCR
+pytesseract==0.3.13
+
+# ML / Face Detection & Verification
+scikit-learn==1.6.1
+scikit-image==0.25.0
+
+# Face analysis - using deepface with lightweight backends
+deepface==0.0.93
+tf-keras>=2.16.0
+
+# Utilities
+scipy==1.15.1
